@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Dka.Net5.CleanArchitecture.Domain.Common</AssemblyName>
+    </PropertyGroup>
+
+</Project>

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using AutoMapper;
-using Domain.Common.Dto.Tenants;
+﻿using AutoMapper;
 using Domain.Models;
 using Domain.ViewModels.Tenants;
 
@@ -11,7 +8,7 @@ namespace Application.Mappings
     {
         public ApplicationProfile()
         {
-            CreateMap<TenantDto, Tenant>();
+            CreateMap<Domain.Common.Entities.Tenants.Tenant, Tenant>();
             CreateMap<Tenant, TenantVm>();
         }
     }

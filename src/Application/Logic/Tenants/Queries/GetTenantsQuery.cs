@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Abstractions.Data;
@@ -15,12 +14,12 @@ namespace Application.Logic.Tenants.Queries
         
     }
 
-    public class GetTodosQueryHandler : IRequestHandler<GetTenantsQuery, TenantsVm>
+    public class GetTenantsQueryHandler : IRequestHandler<GetTenantsQuery, TenantsVm>
     {
         private readonly ITenantsRepository _tenantsRepository;
         private readonly IMapper _mapper;
         
-        public GetTodosQueryHandler(ITenantsRepository tenantsRepository, IMapper mapper)
+        public GetTenantsQueryHandler(ITenantsRepository tenantsRepository, IMapper mapper)
         {
             _tenantsRepository = tenantsRepository;
             _mapper = mapper;
